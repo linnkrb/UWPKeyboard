@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:foo="clr-namespace:UWPError;assembly=UWPError"
+             xmlns:local="clr-namespace:UWPError"
+             x:Class="UWPError.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="This should trigger an update in the cusom rendere, but is not" ></Label>
+        <foo:CustomEntry x:Name="FocusEntryRendere" Focused="FocusEntryRendere_Focused" ></foo:CustomEntry>
+    	<Label Text="This should get focus and softkeyboard open i tablemode - it´s not" />
+        <Entry x:Name="FocusEntry" Focused="Entry_Focused"></Entry>
+    </StackLayout>
+
+</ContentPage>
