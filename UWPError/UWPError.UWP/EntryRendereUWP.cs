@@ -44,7 +44,10 @@ namespace UWPError.UWP
             if (e.PropertyName == CustomEntry.ShowKeyboardProperty.PropertyName)
             {
                 if(sender is CustomEntry)
-                { 
+                {
+
+                    Debug.WriteLine($"Show keyboard ?: {((CustomEntry)sender).ShowKeyboard}");
+
                     if (((CustomEntry)sender).ShowKeyboard == true)
                             InputPane.GetForCurrentView().TryShow();
                     else

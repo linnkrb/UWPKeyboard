@@ -7,10 +7,17 @@
 
     <StackLayout>
         <!-- Place new controls here -->
+        <Label Text="Touching the entry fields will open the softkeyboard, but doing Control.Focus() do not open the softkeyboard" />
+
         <Label Text="This should trigger an update in the cusom rendere, but is not" ></Label>
         <foo:CustomEntry x:Name="FocusEntryRendere" Focused="FocusEntryRendere_Focused" ></foo:CustomEntry>
     	<Label Text="This should get focus and softkeyboard open i tablemode - it´s not" />
         <Entry x:Name="FocusEntry" Focused="Entry_Focused"></Entry>
+        <Label x:Name="FocustStatus" TextColor="Blue"></Label>
+        <Button x:Name="ButtonFunAgain" Text="Re-run" Clicked="ButonFunAgain_Clicked"></Button>
+        <Button x:Name="ButtonShowKeyboard" Text="Show keyboard" Clicked="ButtonShowKeyboard_Clicked"></Button>
+        <Button x:Name="ButtonHideKeyboard" Text="Hide keyboard" Clicked="ButtonHideKeyboard_Clicked"></Button>
+
     </StackLayout>
 
 </ContentPage>
